@@ -1,5 +1,5 @@
 # アプリケーション名
-Travel Feeling
+Travel Mood
 
 # アプリケーション概要
 *旅行気分を味わえる*ことを意識したスポット投稿型SNS
@@ -32,7 +32,7 @@ Travel Feeling
 | Column             | Type   | Options                   |
 | ------------------ | ------ | ------------------------- |
 | name               | string | null: false               |
-| email              | string | null: false, unique: true |
+| email              | string | null: false               |
 | password           | string | null: false               |
 | profile            | text   |                           |
 
