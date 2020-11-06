@@ -1,30 +1,38 @@
 <div class="session-page">
+  <%= render 'shared/header', class: "template" %>
 
-  <h2>Log in</h2>
-
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :"メールアドレス" %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-  </div>
-
-  <div class="field">
-    <%= f.label :"パスワード" %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
-  </div>
-
-  <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+  <%= form_with model: @user, url: user_session_path, class: 'session-main', local: true do |f| %>
+  
+  <div class="session-form-wrap">
+    <div class="session-form-group">
+      <h1 class="session-form-header">Log in</h1>
     </div>
-  <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="session-form-group">
+      <div class="session-form-text">
+        <%= f.label :"メールアドレス" %><br />
+      </div>
+    <%= f.email_field :email, class: "input-default", autofocus: true, autocomplete: "email" %>
+    </div>
+
+  <div class="session-form-group">
+    <div class="session-form-text">
+      <%= f.label :"パスワード" %><br />
+    </div>
+    <%= f.password_field :password, class: "input-default", autocomplete: "current-password" %>
   </div>
+
+  <div class="session-btn">
+    <%= f.submit "Log in", class: "session-lightblue-btn" %>
+  </div>
+
+  <div class="signup-btn">
+      <%= link_to "Sign up", new_user_registration_path, class: "signup-transparence-btn" %>
+    </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<%#= render "devise/shared/links" %>
 
 </div>
