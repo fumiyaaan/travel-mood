@@ -1,8 +1,8 @@
 <div class="registration-page">
-  <%= render 'shared/header' %> <%# なぜか、リンクが発動しない。後ほど修正必要。%>
+  <%= render 'shared/header', class: "template" %>
 
   <%= form_with model: @user, url: user_registration_path, class: 'registration-main', local: true do |f| %>
-
+  
   <div class="form-wrap">
     <div class="form-group">
       <h1 class="form-header">Sign up</h1>
@@ -45,7 +45,7 @@
       <div class="form-text">
         <%= f.label :"プロフィール" %><br />
       </div>
-      <%= f.text_area :profile, class: 'input-default', autofocus: true, autocomplete: "email", rows:"7" ,maxlength:"1000"%>
+      <%= f.text_area :profile, class: 'profile-input-default', autofocus: true, autocomplete: "email", rows:"7" ,maxlength:"1000"%>
     </div>
 
     <div class="registration-btn">
