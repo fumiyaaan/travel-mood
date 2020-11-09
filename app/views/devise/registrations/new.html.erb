@@ -8,7 +8,7 @@
       <h1 class="form-header">Sign up</h1>
     </div>
 
-    <%= render "devise/shared/error_messages", resource: resource %>
+    <%= render 'devise/shared/error_messages', model: f.object %>
 
     <div class="form-group">
       <div class="form-text">
@@ -43,7 +43,7 @@
 
     <div class="form-group">
       <div class="form-text">
-        <%= f.label :"プロフィール" %><br />
+        <%= f.label :"プロフィール（任意）" %><br />
       </div>
       <%= f.text_area :profile, class: 'profile-input-default', autofocus: true, autocomplete: "email", rows:"7" ,maxlength:"1000"%>
     </div>
@@ -56,7 +56,6 @@
       <%= link_to "Log in", new_user_session_path, class: "login-transparence-btn" %>
     </div>
 
-    <%#= render "devise/shared/links" %>
   </div>
   <% end %>
 </div>
