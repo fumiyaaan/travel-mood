@@ -1,7 +1,6 @@
 <div class="session-page">
   <%= render 'shared/header', class: "template" %>
 
-
   <%= form_with model: @user, url: user_session_path, class: 'session-main', local: true do |f| %>
   
   <div class="session-form-wrap">
@@ -9,8 +8,6 @@
       <h1 class="session-form-header">Log in</h1>
     </div>
 
-    <%#= render "devise/shared/error_messages", resource: resource %>
-    <%#= render 'devise/shared/error_messages', model: f.object %>
     <div class='login-flash-message'>
       <%= flash[:notice] %>
       <%= flash[:alert] %>
@@ -37,8 +34,6 @@
   <div class="signup-btn">
       <%= link_to "Sign up", new_user_registration_path, class: "signup-transparence-btn" %>
     </div>
-<% end %>
-
-<%#= render "devise/shared/links" %>
+  <% end %>
 
 </div>
