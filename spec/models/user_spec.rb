@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User, type: :model do 
+RSpec.describe User, type: :model do
   before do
     @user = FactoryBot.build(:user)
   end
@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
       it 'name, email, password, password_confirmation, profileがあれば登録できる' do
         expect(@user).to be_valid
       end
-  
+
       it 'passwordが半角英数字6文字以上であれば登録できる' do
         @user.password = 'abc123'
         @user.password_confirmation = 'abc123'
@@ -39,7 +39,7 @@ RSpec.describe User, type: :model do
       it 'emailに@がないと登録できない' do
         @user.email = 'ab12com.jp'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Email is invalid")
+        expect(@user.errors.full_messages).to include('Email is invalid')
       end
 
       it '重複したemailが存在する場合登録できない' do
@@ -59,25 +59,25 @@ RSpec.describe User, type: :model do
       it 'passwordが5文字以下だと登録できない' do
         @user.password = 'a1234'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password is too short (minimum is 6 characters)")
+        expect(@user.errors.full_messages).to include('Password is too short (minimum is 6 characters)')
       end
 
       it 'passwordが半角英字のみだと登録できない' do
         @user.password = 'abcdef'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password Include both letters and numbers")
+        expect(@user.errors.full_messages).to include('Password Include both letters and numbers')
       end
 
       it 'passwordが半角数字のみだと登録できない' do
         @user.password = '123456'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password Include both letters and numbers")
+        expect(@user.errors.full_messages).to include('Password Include both letters and numbers')
       end
 
       it 'passwordが全角英数字だと登録できない' do
         @user.password = 'Ａ１２３４５'
         @user.valid?
-        expect(@user.errors.full_messages).to include("Password Include both letters and numbers")
+        expect(@user.errors.full_messages).to include('Password Include both letters and numbers')
       end
 
       it 'passwordとpassword_confirmationが不一致だと登録できない' do
