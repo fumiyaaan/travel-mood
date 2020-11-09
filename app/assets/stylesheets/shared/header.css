@@ -1,0 +1,38 @@
+.header {
+  display: flex;
+  align-items: center;
+  
+}
+
+.left-header {
+  display: flex;
+}
+
+.travel-mood-logo {
+  font-size: 30px;
+  color: white;
+  z-index: 2;
+  margin-right: 10px;
+}
+
+.right-header {
+  display: flex;
+  
+  width: 200px;
+}
+
+.right-header {
+  z-index: 2;
+  display: flex;
+  justify-content: space-around;
+}
+
+.sign-up {
+  color: white;
+  font-size: 20px;
+}
+
+.sign-in {
+  color: white;
+  font-size: 20px;
+}

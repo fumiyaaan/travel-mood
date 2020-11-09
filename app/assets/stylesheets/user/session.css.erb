@@ -1,0 +1,83 @@
+.session-page {
+  background-image: url("<%= asset_path('victoriano-izquierdo-HoevDVvxInw-unsplash.jpg') %>");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.session-page::before {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.session-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+
+.session-form-wrap {
+  width: 50%;
+}
+
+.session-form-header {
+  color: white;
+  margin: 0 auto;
+}
+
+.session-form-group {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.session-form-text {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.input-default {
+  height: 30px;
+}
+
+.session-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.session-lightblue-btn {
+  background: lightblue;
+  color: white;
+  font-size: 20px;
+  width: 50%;
+  margin-top: 20px;
+  height: 30px;
+  border: 1px solid lightblue;
+}
+
+.signup-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.signup-transparence-btn {
+  color: white;
+  font-size: 18px;
+  background: ;
+  width: 50%;
+  height: 30px;
+  text-align: center;
+  
+  margin-top: 20px;
+  border: 1px solid lightblue;
+}
