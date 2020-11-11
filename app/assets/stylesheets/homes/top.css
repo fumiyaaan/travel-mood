@@ -7,7 +7,9 @@
 video {
   min-width: 100%;
   min-height: 100vh;
-  background-size: auto;
+  background-size: cover;
+  position: fixed;
+  z-index: -2;
 }
 
 .top-header {
@@ -23,11 +25,13 @@ video {
   display: flex;
 }
 
-.travel-mood-logo {
-  font-size: 30px;
-  color: black;
+.top-travel-mood-logo {
+  font-size: 40px;
+  font-family: helvetica;
+  text-shadow: 1px 1px 1px black;
+  color: white;
   z-index: 1;
-  margin-right: 10px;
+  margin: 0 15px;
 }
 
 .top-right-header {
@@ -47,4 +51,18 @@ video {
   font-size: 20px;
 }
 
+.appear-message {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.appear-message-text {
+  color: white;
+  font-size: 60px;
+  font-family: helvetica;
+  text-shadow: 2px 2px 3px black;
+  z-index: 3;
+}

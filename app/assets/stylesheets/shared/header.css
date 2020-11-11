@@ -1,7 +1,9 @@
 .header {
   display: flex;
   align-items: center;
-  background: rgba(0,0,0,0.3)
+  background: rgba(0,0,0,0.3);
+  width: 100%;
+  z-index: 1;
 }
 
 .left-header {
@@ -9,10 +11,12 @@
 }
 
 .travel-mood-logo {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: helvetica;
+  text-shadow: 2px 2px 3px black;
   color: white;
   z-index: 1;
-  margin-right: 10px;
+  margin: 0 15px;
 }
 
 .right-header {
