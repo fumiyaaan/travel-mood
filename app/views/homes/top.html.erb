@@ -8,7 +8,7 @@
 
     <ul class="top-right-header">
       <% if user_signed_in? %>
-        <li><%= link_to "ユーザー名", current_user.name, class: "top-user-name" %></li>
+        <li><%= link_to "ユーザー名", "#", class: "top-user-name" %></li>
         <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "top-sign-out" %></li>
       <% else %>
         <li><%= link_to "新規登録", new_user_registration_path, class: "top-sign-up" %></li>
