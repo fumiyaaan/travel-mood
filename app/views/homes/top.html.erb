@@ -1,0 +1,36 @@
+<div class="top-page">
+
+  <%# ヘッダー部分 %>
+  <div class="top-header">
+    <div class="top-left-header">
+      <%= link_to "Travel Mood", root_path, class: "top-travel-mood-logo "%>
+    </div>
+
+    <ul class="top-right-header">
+      <% if user_signed_in? %>
+        <li><%= link_to "ユーザー名", "#", class: "top-user-name" %></li>
+        <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "top-sign-out" %></li>
+      <% else %>
+        <li><%= link_to "新規登録", new_user_registration_path, class: "top-sign-up" %></li>
+        <li><%= link_to "ログイン", new_user_session_path, class: "top-sign-in" %></li>
+      <% end %>
+    </ul>
+  </div>
+  <%# ヘッダー部分/ %>
+
+  <%= video_tag("/assets/videos/mixkit-turquoise-blue-water-bay-from-above-5008.mp4", autoplay: :true, loop: :true, muted: :true) %>
+
+  <div class="appear-message">
+    <div class="appear-message-text">Welcome to Travel Mood.</div>
+    
+    <div class="about-btn">
+      <% if user_signed_in? %>
+        <%= link_to "START!", spots_path, class: "about-white-btn" %>
+      <% else %>
+        <%= link_to "START!", homes_path, class: "about-white-btn" %>
+      <% end %>
+    </div>
+  </div>
+
+  
+</div>
