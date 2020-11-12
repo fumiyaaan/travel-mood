@@ -1,0 +1,23 @@
+<div class="about-page">
+
+  <%= render 'shared/header' %>
+  <div class="about-main">
+    <div class="about-content">
+      <div class="about-title">
+        <h1>Travel Moodとは</h1>
+      </div>
+
+      <ul class="explanations">
+        <li class="explanation">Travel Moodは、スポット投稿型SNSです。</li>
+        <li class="explanation">あなたのお気に入りスポットを投稿することができます。</li>
+        <li class="explanation">他のユーザーが投稿したスポットにコメントすることができます。</li>
+        <li class="explanation">ユーザー同士でUnknownsを評価することで、穴場スポットが見つかるかもしれません。</li>
+      </ul>
+
+      <div class="start-btn">
+        <%= link_to "Travel Moodをはじめる", new_user_registration_path, class: "start-white-btn" %>
+      </div>
+    </div>
+  </div>
+
+</div>
