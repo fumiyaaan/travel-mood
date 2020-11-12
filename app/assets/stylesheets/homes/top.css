@@ -57,6 +57,7 @@ video {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .appear-message-text {
@@ -65,4 +66,29 @@ video {
   font-family: helvetica;
   text-shadow: 2px 2px 3px black;
   z-index: 3;
+}
+
+.about-btn {
+  margin-top: 50px;
+}
+
+.about-white-btn {
+  color: white;
+  font-size: 40px;
+  font-family: helvetica;
+  text-shadow: 1px 1px 1px black;
+  margin-top: 20px;
+  height: 30px;
+  display: inline-block;
+  padding: 0.3em;
+}
+
+.about-white-btn:hover {
+  animation: zoom .3s;
+}
+
+@keyframes zoom {
+	50% {
+		transform: scale(1.05);
+  }
 }
