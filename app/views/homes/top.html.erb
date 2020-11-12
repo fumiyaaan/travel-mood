@@ -24,7 +24,11 @@
     <div class="appear-message-text">Welcome to Travel Mood.</div>
     
     <div class="about-btn">
-      <%= link_to "Travel Moodとは", homes_path, class: "about-white-btn" %>
+      <% if user_signed_in? %>
+        <%= link_to "START!", spots_path, class: "about-white-btn" %>
+      <% else %>
+        <%= link_to "START!", homes_path, class: "about-white-btn" %>
+      <% end %>
     </div>
   </div>
 
