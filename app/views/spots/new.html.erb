@@ -1,0 +1,53 @@
+<div class="new-spot-page">
+
+  <%= render 'shared/header' %>
+
+  <div class="new-spot-content">
+    <h2 class="new-spot-title">スポットの情報を入力</h2>
+
+    <%= form_with(model: @spot, local: true) do |f| %>
+
+    <%= render 'devise/shared/error_messages', model: f.object %>
+
+    <%# スポット画像 %>
+      <div class="img-upload">
+      <div class="weight-bold-text">
+        スポット画像
+        <span class="indispensable">必須</span>
+      </div>
+      <div class="click-upload">
+        <p>
+          クリックしてファイルをアップロード
+        </p>
+        <%= f.file_field :image, id:"item-image" %>
+      </div>
+    </div>
+    <%# スポット画像/ %>
+
+    <%# タイトル %>
+      <div class="spot-title">
+        <div class="weight-bold-text">
+          説明
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_field :title, class:"title-text", placeholder:"###" %>
+      </div>
+    <%# タイトル/ %>
+
+    <%# スポットの説明 %>
+      <div class="items-explain">
+        <div class="weight-bold-text">
+          説明
+          <span class="indispensable">必須</span>
+        </div>
+        <%= f.text_area :description, class:"description-text", placeholder:"###" ,rows:"7" ,maxlength:"1000" %>
+      </div>
+    <%# スポットの説明/ %>
+
+    <div class="new-spot-btn">
+      <%= f.submit "投稿", class: "post-lightblue-btn" %>
+    </div>
+
+    <% end %>
+  </div>
+</div>
