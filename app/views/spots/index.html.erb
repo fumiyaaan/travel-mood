@@ -2,12 +2,48 @@
 
   <%= render 'shared/header' %>
 
+  <h2>スポット一覧</h2>
+  
   <%# スポット一覧 %>
   <div class="all-spots">
-  
-    
+    <% @spots.each do |spot| %>
+    <ul class="spot-lists">
+      <li class="spot-list">
+        <%= link_to "#" do %>
+          <div class="spot-img-content ">
+            <%= image_tag spot.image.variant(resize: '200x200'), class: "spot-img" %>
+          </div>
+        <% end %>
+
+        <div class="spot-info" >
+          <div class="spot-main-info">
+            <div class="spot-title">
+              <%= spot.title %>
+            </div>
+            <div class="spot-poster">
+              <%= spot.user.name %>
+            </div>
+          </div>
+          <div class="spot-unknowns">
+            <%= "Unknowns" %> <%= "4.5" %>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <% end %>
   </div>
 
   <%# スポット一覧/ %>
 
+  <%# 投稿ボタン %>
+  <div class="new-spot-btn-wrap">
+    <div class='new-spot-btn'>
+      <span class='new-spot-btn-text'>投稿する</span>
+      <a href="/spots/new">
+        <%= image_tag 'new-spot-icon.jpeg' , size: '185x50' ,class: "new-spot-btn-icon" %>
+      </a>
+    </div>
+  </div>
+  <%# 投稿ボタン/ %>
 </div>
+
