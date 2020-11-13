@@ -28,11 +28,10 @@ h2 {
   width: 100vw;
   flex-wrap: wrap;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .spot-lists {
-  
   
 }
 
@@ -43,7 +42,6 @@ h2 {
 .spot-main-info {
   display: flex;
   justify-content: around-space;
-
 }
 
 .spot-info {
@@ -73,11 +71,26 @@ h2 {
   z-index: 2;
 }
 
-.new-spot-btn-wrap {
-  display: flex;
-  justify-content: flex-end;
+.new-spot-btn {
+  background: lightblue;
+  text-align: center;
+  border-radius: 4%;
+  bottom: 32px;
+  right: 32px;
+  position: fixed;
+  padding: 15px;
+}
+
+.new-spot-btn-text {
+  color: #fff;
+  display: block;
+  font-size: 16px;
+  text-decoration: none;
+  margin-bottom: 5px;
 }
 
 .new-spot-btn {
-
+  width: 100px;
 }
+
+

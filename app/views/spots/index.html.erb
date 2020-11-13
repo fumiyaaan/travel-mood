@@ -2,7 +2,7 @@
 
   <%= render 'shared/header' %>
 
-  <h2>スポット一覧</h2>
+  <%# <h2>スポット一覧</h2> %>
   
   <%# スポット一覧 %>
   <div class="all-spots">
@@ -36,13 +36,11 @@
   <%# スポット一覧/ %>
 
   <%# 投稿ボタン %>
-  <div class="new-spot-btn-wrap">
-    <div class='new-spot-btn'>
-      <span class='new-spot-btn-text'>投稿する</span>
-      <a href="/spots/new">
-        <%= image_tag 'new-spot-icon.jpeg' , size: '185x50' ,class: "new-spot-btn-icon" %>
-      </a>
-    </div>
+  <div class='new-spot-btn'>
+  <span class='new-spot-btn-text'>投稿する</span>
+    <a href="/spots/new">
+      <%= image_tag 'new-spot-icon.jpeg' , size: '60x50' ,class: "new-spot-btn-icon" %>
+    </a>
   </div>
   <%# 投稿ボタン/ %>
 </div>
