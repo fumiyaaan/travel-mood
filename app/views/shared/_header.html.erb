@@ -1,6 +1,10 @@
 <div class="header">
   <div class="left-header">
-    <%= link_to "Travel Mood", root_path, class: "travel-mood-logo "%>
+    <% if user_signed_in? %>
+      <%= link_to "Travel Mood", spots_path, class: "travel-mood-logo" %>
+    <% else %>
+      <%= link_to "Travel Mood", root_path, class: "travel-mood-logo" %>
+    <% end %>
   </div>
 
   <ul class="right-header">

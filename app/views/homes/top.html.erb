@@ -3,7 +3,11 @@
   <%# ヘッダー部分 %>
   <div class="top-header">
     <div class="top-left-header">
-      <%= link_to "Travel Mood", root_path, class: "top-travel-mood-logo "%>
+      <% if user_signed_in? %>
+        <%= link_to "Travel Mood", spots_path, class: "top-travel-mood-logo" %>
+      <% else %>
+        <%= link_to "Travel Mood", root_path, class: "top-travel-mood-logo" %>
+      <% end %>
     </div>
 
     <ul class="top-right-header">
