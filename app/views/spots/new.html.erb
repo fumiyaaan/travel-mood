@@ -1,53 +1,50 @@
-<div class="new-spot-page">
-
+<div class="post-spot-page">
   <%= render 'shared/header' %>
 
-  <div class="new-spot-content">
-    <h2 class="new-spot-title">スポットの情報を入力</h2>
-
-    <%= form_with(model: @spot, local: true) do |f| %>
+  <%= form_with model: @spot, class: "post-spot-main", local: true do |f| %>
+  
+  <div class="post-form-wrap">
+    <div class="post-form-group">
+      <h1 class="post-form-header">スポット情報を入力</h1>
+    </div>
 
     <%= render 'devise/shared/error_messages', model: f.object %>
-
+    
     <%# スポット画像 %>
-      <div class="img-upload">
-      <div class="weight-bold-text">
-        スポット画像
-        <span class="indispensable">必須</span>
-      </div>
-      <div class="click-upload">
-        <p>
-          クリックしてファイルをアップロード
-        </p>
-        <%= f.file_field :image, id:"item-image" %>
-      </div>
+    <div class="img-mark-text">
+      画像
+    </div>
+
+    <div class="post-form-group">
+        <div class="post-img">
+          <%= f.file_field :image, id:"spot-image" %>
+        </div>
     </div>
     <%# スポット画像/ %>
 
     <%# タイトル %>
-      <div class="spot-title">
-        <div class="weight-bold-text">
-          説明
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.text_field :title, class:"title-text", placeholder:"###" %>
+    <div class="post-form-group">
+      <div class="post-form-text">
+        <%= f.label :"タイトル", class: "post-text" %>
       </div>
+      <%= f.text_field :title, class: "post-input-default" %>
+    </div>
     <%# タイトル/ %>
 
     <%# スポットの説明 %>
-      <div class="items-explain">
-        <div class="weight-bold-text">
-          説明
-          <span class="indispensable">必須</span>
-        </div>
-        <%= f.text_area :description, class:"description-text", placeholder:"###" ,rows:"7" ,maxlength:"1000" %>
+    <div class="post-form-group">
+      <div class="post-form-text">
+        <%= f.label :"スポット説明", class: "post-text" %>
       </div>
+      <%= f.text_area :description, class: "post-description-default", placeholder: "スポットの説明（必須 1000文字まで）", rows:"7" ,maxlength:"1000" %>
+    </div>
     <%# スポットの説明/ %>
 
-    <div class="new-spot-btn">
+    <div class="post-form-group">
       <%= f.submit "投稿", class: "post-lightblue-btn" %>
     </div>
-
-    <% end %>
+ 
   </div>
+  <% end %>
+
 </div>

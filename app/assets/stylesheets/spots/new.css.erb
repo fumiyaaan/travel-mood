@@ -1,4 +1,4 @@
-.new-spot-page {
+.post-spot-page {
   background-image: url("<%= asset_path('cesar-couto-pC2xOplxsVs-unsplash.jpg') %>");
   background-size: cover;
   width: 100%;
@@ -6,7 +6,7 @@
   position: relative;
 }
 
-.new-spot-page::before {
+.post-spot-page::before {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   top: 0;
@@ -16,7 +16,83 @@
   content: ' ';
 }
 
-.new-spot-content {
+.post-spot-main {
   position: absolute;
   z-index: 2;
+  width: 100%;
+}
+
+.post-form-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-img-form-group {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.post-form-header {
+  color: white;
+  margin: 0 auto;
+}
+
+.img-mark-text {
+  color: white;
+  width: 50%;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.post-form-wrap {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.post-form-group {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-img {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+}
+
+.post-form-text {
+  width: 100%;
+  margin: 0 auto;
+  color: white;
+  font-size: 20px;
+}
+
+.post-input-default {
+  width: 100%;
+  margin: 0 auto;
+  height: 30px;
+  margin-top: 5px;
+  padding: 5px 7px;
+}
+
+.post-description-default {
+  width: 100%;
+  margin: 0 auto; 
+  margin-top: 5px;
+  padding: 5px 7px;
+}
+
+.post-lightblue-btn {
+  width: 100%;
+  background: lightblue;
+  color: white;
+  font-size: 20px;
+  margin-top: 10px;
+  border: 1px solid lightblue;
 }
