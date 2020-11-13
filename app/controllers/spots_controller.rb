@@ -1,4 +1,6 @@
 class SpotsController < ApplicationController
+  before_action :authenticate_user!, except: :index
+
   def index
     @spots = Spot.all
   end
@@ -8,8 +10,12 @@ class SpotsController < ApplicationController
   end
 
   def create
-    
-    Spot.create(spot_params)
+    @spot = Spot.new(spot_params)
+    if @spot.save
+      redirect_to spots_path
+    else
+      render :new
+    end
   end
 
   private
