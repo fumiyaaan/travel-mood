@@ -1,1 +1,48 @@
-<h1>spots#show</h1>
+<div class="spot-show-page">
+
+  <%= render 'shared/header' %>
+
+  <%# スポット詳細 %>
+  <div class="spot-show">
+
+    <%# スポットタイトル %>
+    <div class="spot-show-title">
+      <%= @spot.title %>
+    </div>
+    <%# スポットタイトル %>
+
+    <%# スポット画像 %>
+    <div class="spot-show-img">
+      <%= image_tag @spot.image, class: "spot-show-img" %>
+    </div>
+    <%# スポット画像/ %>
+
+    <%# 投稿者 %>
+    <%= link_to "#" do %>
+      <div class="spot-show-poster">
+        <span>By.</span><%= @spot.user.name %>
+        </div>
+    <% end %>
+    <%# 投稿者/ %>
+
+    <%# スポット説明 %>
+      <div class="spot-show-description">
+        <%= @spot.description %>
+      </div>
+    <%# スポット説明/ %>
+
+    <%# Unknowns %>
+      <div class="spot-show-unknowns">
+        <%= "Unknowns" %> <%= "4.5" %>
+      </div>
+    <%# Unknowns/ %>
+
+  </div>
+  <%# スポット詳細/ %>
+
+  <%# コメント投稿欄 %>
+    <div class="comments">
+    
+    </div>
+  <%# コメント投稿欄/ %>
+</div>
