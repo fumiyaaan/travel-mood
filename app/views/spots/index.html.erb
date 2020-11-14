@@ -2,19 +2,19 @@
 
   <%= render 'shared/header' %>
 
-  <%# <h2>スポット一覧</h2> %>
+  <%# <h2>投稿一覧</h2> %>
   
   <%# スポット一覧 %>
   <div class="all-spots">
-    <% @spots.each do |spot| %>
     <ul class="spot-lists">
+      <% @spots.each do |spot| %>
       <li class="spot-list">
         <%= link_to "#" do %>
           <div class="spot-img-content ">
-            <%= image_tag spot.image.variant(resize: '200x200'), class: "spot-img" %>
+            <%= image_tag spot.image, class: "spot-img" %>
           </div>
         <% end %>
-
+        
         <div class="spot-info" >
           <div class="spot-main-info">
             <div class="spot-title">
@@ -29,10 +29,9 @@
           </div>
         </div>
       </li>
+      <% end %>
     </ul>
-    <% end %>
   </div>
-
   <%# スポット一覧/ %>
 
   <%# 投稿ボタン %>
