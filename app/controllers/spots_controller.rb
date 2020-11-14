@@ -23,5 +23,4 @@ class SpotsController < ApplicationController
   def spot_params
     params.require(:spot).permit(:image, :title, :description).merge(user_id: current_user.id)
   end
-  
 end
