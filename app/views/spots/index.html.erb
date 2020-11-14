@@ -9,21 +9,23 @@
         <% @spots.each do |spot| %>
         <li class="spot-list">
 
-          <%= link_to "#" do %>
+          <%# スポット画像 %>
+          <%= link_to spot_path(spot.id) do %>
             <div class="spot-img-content ">
               <%= image_tag spot.image, class: "spot-img" %>
             </div>
           <% end %>
+          <%# スポット画像/ %>
         
           <div class="spot-info" >
             <div class="spot-main-info">
-              <%# スポット画像 %>
-              <%= link_to "#" do %>
+              <%# スポットタイトル %>
+              <%= link_to spot_path(spot.id) do %>
                 <div class="spot-title">
                   <%= spot.title %>
                 </div>
               <% end %>
-              <%# スポット画像/%>
+              <%# スポットタイトル /%>
 
               <%# 投稿者 %>
               <%= link_to "#" do %>
