@@ -18,11 +18,11 @@
     <%# スポット画像/ %>
 
     <%# 投稿者 %>
-    <%= link_to "#" do %>
       <div class="spot-show-poster">
-        <span>By.</span><%= @spot.user.name %>
-        </div>
-    <% end %>
+        <%= link_to "#", class: "spot-show-poster-text" do %>
+          <span>By.</span><%= @spot.user.name %>
+        <% end %>
+      </div>
     <%# 投稿者/ %>
 
     <%# スポット説明 %>
@@ -42,7 +42,8 @@
 
   <%# コメント投稿欄 %>
     <div class="comments">
-    
+      
     </div>
   <%# コメント投稿欄/ %>
+
 </div>
