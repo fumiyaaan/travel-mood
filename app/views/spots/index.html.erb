@@ -1,36 +1,35 @@
 <div class="all-spots-page">
 
   <%= render 'shared/header' %>
-
-  <%# <h2>投稿一覧</h2> %>
   
   <%# スポット一覧 %>
   <div class="all-spots">
-    <ul class="spot-lists">
-      <% @spots.each do |spot| %>
-      <li class="spot-list">
-        <%= link_to "#" do %>
-          <div class="spot-img-content ">
-            <%= image_tag spot.image, class: "spot-img" %>
-          </div>
-        <% end %>
+    <h2 class="spot-lists-title">投稿一覧</h2>
+      <ul class="spot-lists">
+        <% @spots.each do |spot| %>
+        <li class="spot-list">
+          <%= link_to "#" do %>
+            <div class="spot-img-content ">
+              <%= image_tag spot.image, class: "spot-img" %>
+            </div>
+          <% end %>
         
-        <div class="spot-info" >
-          <div class="spot-main-info">
-            <div class="spot-title">
-              <%= spot.title %>
+          <div class="spot-info" >
+            <div class="spot-main-info">
+              <div class="spot-title">
+                <%= spot.title %>
+              </div>
+              <div class="spot-poster">
+                <%= spot.user.name %>
+              </div>
             </div>
-            <div class="spot-poster">
-              <%= spot.user.name %>
+            <div class="spot-unknowns">
+              <%= "Unknowns" %> <%= "4.5" %>
             </div>
           </div>
-          <div class="spot-unknowns">
-            <%= "Unknowns" %> <%= "4.5" %>
-          </div>
-        </div>
-      </li>
-      <% end %>
-    </ul>
+        </li>
+        <% end %>
+      </ul>
   </div>
   <%# スポット一覧/ %>
 
