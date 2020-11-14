@@ -8,6 +8,7 @@
       <ul class="spot-lists">
         <% @spots.each do |spot| %>
         <li class="spot-list">
+
           <%= link_to "#" do %>
             <div class="spot-img-content ">
               <%= image_tag spot.image, class: "spot-img" %>
@@ -16,17 +17,30 @@
         
           <div class="spot-info" >
             <div class="spot-main-info">
-              <div class="spot-title">
-                <%= spot.title %>
-              </div>
-              <div class="spot-poster">
-                <%= spot.user.name %>
-              </div>
+              <%# スポット画像 %>
+              <%= link_to "#" do %>
+                <div class="spot-title">
+                  <%= spot.title %>
+                </div>
+              <% end %>
+              <%# スポット画像/%>
+
+              <%# 投稿者 %>
+              <%= link_to "#" do %>
+                <div class="spot-poster">
+                  <%= spot.user.name %>
+                </div>
+              <% end %>
+              <%# 投稿者/ %>
             </div>
+
+            <%# Unknowns %>
             <div class="spot-unknowns">
               <%= "Unknowns" %> <%= "4.5" %>
             </div>
+            <%# Unknowns/ %>
           </div>
+        
         </li>
         <% end %>
       </ul>
