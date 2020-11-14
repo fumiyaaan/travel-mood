@@ -2,11 +2,11 @@
 Travel Mood
 
 # アプリケーション概要
-*旅行気分を味わえる*ことを意識したスポット投稿型SNS
-ユーザーを登録するとスポットを投稿できるようになります。自身が投稿したスポットは、編集と削除をすることができます。他のユーザーが投稿したスポットにコメントすることができます。他のユーザーが投稿したスポットを、お気に入りのスポットとして保存することができます。
+Travel Moodは、スポット投稿型SNSです。
+ユーザーを登録するとスポットを投稿できるようになります。自身が投稿したスポットは、編集と削除をすることができます。他のユーザーが投稿したスポットにコメントすることができます。また、ユーザー同士でUnknowns（穴場度）を5段階で評価することで、穴場スポットが見つかるかもしれません。
 
 # URL
-※デプロイ後に記述
+https://travel-mood.herokuapp.com/
 
 # テスト用アカウント
  
@@ -58,11 +58,12 @@ Travel Mood
 
 ## commentsテーブル
 
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| text   | text       | null: false                    |
-| user   | references | null: false, foreign_key: true |
-| spot   | references | null: false, foreign_key: true |
+| Column  | Type       | Options                        |
+| ------  | ---------- | ------------------------------ |
+| text    | text       | null: false                    |
+| unknown | integer    | null: false                    |
+| user    | references | null: false, foreign_key: true |
+| spot    | references | null: false, foreign_key: true |
 
 ### Association
 -belongs_to :user

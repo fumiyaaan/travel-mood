@@ -3,12 +3,16 @@
   <%# ヘッダー部分 %>
   <div class="top-header">
     <div class="top-left-header">
-      <%= link_to "Travel Mood", root_path, class: "top-travel-mood-logo "%>
+      <% if user_signed_in? %>
+        <%= link_to "Travel Mood", spots_path, class: "top-travel-mood-logo" %>
+      <% else %>
+        <%= link_to "Travel Mood", root_path, class: "top-travel-mood-logo" %>
+      <% end %>
     </div>
 
     <ul class="top-right-header">
       <% if user_signed_in? %>
-        <li><%= link_to "ユーザー名", "#", class: "top-user-name" %></li>
+        <li><%= link_to current_user.name, "#", class: "top-user-name" %></li>
         <li><%= link_to "ログアウト", destroy_user_session_path, method: :delete, class: "top-sign-out" %></li>
       <% else %>
         <li><%= link_to "新規登録", new_user_registration_path, class: "top-sign-up" %></li>
