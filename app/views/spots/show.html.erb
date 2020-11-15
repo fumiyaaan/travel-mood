@@ -14,6 +14,23 @@
     <%# スポット画像 %>
     <div class="spot-show-img">
       <%= image_tag @spot.image, class: "spot-show-img" %>
+
+        <%# 画像右上の矢印 %>
+        <div class="more">
+          <span><%= image_tag "/images/arrow_top.png", class: "more-list-icon" %></span>
+          <ul class="more-list">
+            <% if user_signed_in? && current_user.id == @spot.user_id %>
+              <li class="spot-edit-btn">
+                <%= link_to '編集', "#" %>
+              </li>
+              <li class="spot-delete-btn">
+                <%= link_to '削除', "#" %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+        <%# 画像右上の矢印/ %>
+
     </div>
     <%# スポット画像/ %>
 
