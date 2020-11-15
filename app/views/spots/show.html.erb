@@ -16,19 +16,19 @@
       <%= image_tag @spot.image, class: "spot-show-img" %>
 
         <%# 画像右上の矢印 %>
-        <div class="more">
-          <span><%= image_tag "/images/arrow_top.png", class: "more-list-icon" %></span>
-          <ul class="more-list">
-            <% if user_signed_in? && current_user.id == @spot.user_id %>
+        <% if user_signed_in? && current_user.id == @spot.user_id %>
+          <div class="more">
+            <span><%= image_tag "/images/arrow_top.png", class: "more-list-icon" %></span>
+            <ul class="more-list">
               <li class="spot-edit-btn">
                 <%= link_to '編集', "#" %>
               </li>
               <li class="spot-delete-btn">
                 <%= link_to '削除', "#" %>
               </li>
-            <% end %>
-          </ul>
-        </div>
+            </ul>
+          </div>
+        <% end %>
         <%# 画像右上の矢印/ %>
 
     </div>
@@ -58,8 +58,10 @@
   <%# スポット詳細/ %>
 
   <%# コメント投稿欄 %>
-    <div class="comments">
-      
+    <div class="comment-post-wrap">
+      <div class="comment-form">
+
+      </div>
     </div>
   <%# コメント投稿欄/ %>
 
