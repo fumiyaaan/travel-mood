@@ -39,7 +39,6 @@ https://travel-mood.herokuapp.com/
 ### Association
 -has_many :spots
 -has_many :comments
--has_many :likes
 
 
 ## spotsテーブル
@@ -53,7 +52,6 @@ https://travel-mood.herokuapp.com/
 ### Association
 -belongs_to :user
 -has_many :comments
--has_many :likes
 
 
 ## commentsテーブル
@@ -70,20 +68,9 @@ https://travel-mood.herokuapp.com/
 -belongs_to :spot
 
 
-## likesテーブル
-
-| Column | Type       | Options                        |
-| ------ | ---------- | ------------------------------ |
-| user   | references | null: false, foreign_key: true |
-| spot   | references | null: false, foreign_key: true |
-
-### Association
--belongs_to :user
--belongs_to :spot
-
 
 ## ER図
-[![Image from Gyazo](https://i.gyazo.com/2b254ac1e46869bbb1c5597c79431982.png)](https://gyazo.com/2b254ac1e46869bbb1c5597c79431982)
+[![Image from Gyazo](https://i.gyazo.com/a4e1454a92f2de5ba7204f7dc9c90a9c.png)](https://gyazo.com/a4e1454a92f2de5ba7204f7dc9c90a9c)
 
 
 # ローカルでの動作方法
