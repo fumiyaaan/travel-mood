@@ -15,7 +15,7 @@
     <div class="spot-show-img">
       <%= image_tag @spot.image, class: "spot-show-img" %>
 
-        <%# 画像右上の矢印 %>
+        <%# スポット画像右上のプルダウン %>
         <% if user_signed_in? && current_user.id == @spot.user_id %>
           <div class="more">
             <span><%= image_tag "/images/arrow_top.png", class: "more-list-icon" %></span>
@@ -29,7 +29,7 @@
             </ul>
           </div>
         <% end %>
-        <%# 画像右上の矢印/ %>
+        <%# スポット画像右上のプルダウン/ %>
 
     </div>
     <%# スポット画像/ %>
