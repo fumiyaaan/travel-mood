@@ -1,6 +1,6 @@
 class SpotsController < ApplicationController
   before_action :authenticate_user!, except: :index
-  before_action :set_spot, only: [:show, :edit, :update]
+  before_action :set_spot, only: [:show, :edit, :update, :destroy]
   before_action :move_to_index, only: :edit
 
   def index
@@ -31,6 +31,15 @@ class SpotsController < ApplicationController
       redirect_to spot_path(@spot.id)
     else
       render :edit
+    end
+  end
+
+  def destroy
+    if user_signed_in? && current_user.id == @spot.user_id
+      @spot.destroy
+      redirect_to spots_path
+    else
+      redirect_to spot_path(@spot.id)
     end
   end
 
