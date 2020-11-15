@@ -1,5 +1,6 @@
 class SpotsController < ApplicationController
   before_action :authenticate_user!, except: :index
+  before_action :set_spot, only: :show
 
   def index
     @spots = Spot.all
@@ -18,9 +19,16 @@ class SpotsController < ApplicationController
     end
   end
 
+  def show
+  end
+
   private
 
   def spot_params
     params.require(:spot).permit(:image, :title, :description).merge(user_id: current_user.id)
+  end
+
+  def set_spot
+    @spot = Spot.find(params[:id])
   end
 end
