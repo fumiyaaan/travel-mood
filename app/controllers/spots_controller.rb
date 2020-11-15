@@ -1,6 +1,6 @@
 class SpotsController < ApplicationController
   before_action :authenticate_user!, except: :index
-  before_action :set_spot, only: [:show, :edit]
+  before_action :set_spot, only: [:show, :edit, :update]
 
   def index
     @spots = Spot.all
@@ -26,6 +26,11 @@ class SpotsController < ApplicationController
   end
 
   def update
+    if @spot.update(spot_params)
+      redirect_to spot_path(@spot.id)
+    else
+      render :edit
+    end
   end
 
   private
