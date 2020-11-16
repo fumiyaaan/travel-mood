@@ -32,7 +32,9 @@ https://travel-mood.herokuapp.com/
 InstagramやTwitterなどの横綱級SNSと差別化させるために、Unknowns評価機能を実装しました。Unknownsとは、「穴場度」を指し、1~5の5段階で評価されます。今まで評価されたUnknownsは各スポットごとに算出されます。ここでいう「バズる」の基準は、Unknownsの高さになります。
 
 # DEMO
-
+## トップページ
+[![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
+トップページ上で、新規登録ページ、ログインページ、このアプリに関する説明ページに遷移することができます。
 
 
 
