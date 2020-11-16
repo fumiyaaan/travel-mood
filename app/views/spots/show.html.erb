@@ -61,6 +61,23 @@
     <div class="comment-post-wrap">
       <div class="comment-form">
 
+        <%# 他のユーザーの投稿の場合 %>
+        <% if user_signed_in? && @spot.user_id != current_user.id %>
+         <%= form_with(model: [@spot, @comment], local: true) do |f| %>
+            <%= f.text_area :text, placeholder: "コメントを入力", rows: "3" %>
+            <%= f.file_field :unknown, placeholder: "1~5で評価する" %>
+            <%= f.submit "コメント"%>
+          <% end %>
+        <%# 他のユーザーの投稿の場合/ %>
+
+        <%# 自分の投稿の場合 %>
+        <% elsif  user_signed_in? && @spot.user_id == current_user.id %>
+          <%= form_with(model: [@spot, @comment], local: true) do |f| %>
+            <%= f.text_area :text, placeholder: "コメントを入力", rows: "3" %>
+            <%= f.submit "コメント"%>
+          <% end %>
+        <%# 自分の投稿の場合/ %>
+        <% end %>
       </div>
     </div>
   <%# コメント投稿欄/ %>
