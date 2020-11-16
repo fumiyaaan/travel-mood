@@ -1,10 +1,13 @@
 class CommentsController < ApplicationController
   def create
+    @spot = Spot.find(params[:spot_id])
     @comment = Comment.new(comment_params)
     if @comment.save
       redirect_to spot_path(@spot.id)
     else
-      render template: 'spots/show'
+      @spot = Spot.find(params[:spot_id])
+      @comments = @spot.comments.includes(:user)
+      render 'spots/show'
     end
   end
 
