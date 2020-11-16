@@ -59,26 +59,40 @@
 
   <%# コメント投稿欄 %>
     <div class="comment-post-wrap">
-      <div class="comment-form">
 
-        <%# 他のユーザーの投稿の場合 %>
-        <% if user_signed_in? && @spot.user_id != current_user.id %>
-         <%= form_with(model: [@spot, @comment], local: true) do |f| %>
-            <%= f.text_area :text, placeholder: "コメントを入力", rows: "3" %>
-            <%= f.file_field :unknown, placeholder: "1~5で評価する" %>
-            <%= f.submit "コメント"%>
-          <% end %>
-        <%# 他のユーザーの投稿の場合/ %>
+      <%# 他のユーザーの投稿の場合 %>
+      <% if user_signed_in? && @spot.user_id != current_user.id %>
+        <%= form_with(model: [@spot, @comment], local: true, class: "post-comment-main") do |f| %>
 
-        <%# 自分の投稿の場合 %>
-        <% elsif  user_signed_in? && @spot.user_id == current_user.id %>
-          <%= form_with(model: [@spot, @comment], local: true) do |f| %>
-            <%= f.text_area :text, placeholder: "コメントを入力", rows: "3" %>
-            <%= f.submit "コメント"%>
-          <% end %>
-        <%# 自分の投稿の場合/ %>
+          <div class="text-form-group">
+            <%= f.text_area :text, placeholder: "コメントする", class: "text-input-default" %>
+          </div>
+
+          <div class="unknowns-form-group">
+            <%# f.label :"Unknowns", class: "unknowns-text" %>
+            <%= f.text_field :unknown, class: "unknowns-input-default" %>
+            <div class="unknowns-description-text">
+              Unknowns = 穴場度を1~5点で評価してみましょう
+            </div>
+          </div>
+
+          <div class="comment-btn-group">
+            <%= f.submit "コメント投稿", class: "comment-lightblue-btn" %>
+          </div>
+
         <% end %>
-      </div>
+      <%# 他のユーザーの投稿の場合/ %>
+
+      <%# 自分の投稿の場合 %>
+      <% elsif  user_signed_in? && @spot.user_id == current_user.id %>
+        <%= form_with(model: [@spot, @comment], local: true) do |f| %>
+          <%= f.text_area :text, placeholder: "コメントを入力", rows: "3" %>
+          <%= f.submit "コメント"%>
+        <% end %>
+      <%# 自分の投稿の場合/ %>
+
+      <% end %>
+
     </div>
   <%# コメント投稿欄/ %>
 
