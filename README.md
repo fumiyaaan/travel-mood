@@ -34,11 +34,22 @@ InstagramやTwitterなどの横綱級SNSと差別化させるために、Unknown
 # DEMO
 ## トップページ
 [![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
-トップページ上で、新規登録ページ、ログインページ、このアプリに関する説明ページに遷移することができます。  
+トップページは、背景を動画にしました。  
+トップページから、新規登録ページ、ログインページへ遷移することができます。また、START!をクリックすると、アプリ説明ページへ遷移します。
 
-## アプリ説明ページ  
+## アプリ説明ページ
 [![Image from Gyazo](https://i.gyazo.com/4f7196a5b2a6ff7a321125c2900f7a2b.jpg)](https://gyazo.com/4f7196a5b2a6ff7a321125c2900f7a2b)
 
+## 新規登録ページ
+[![Image from Gyazo](https://i.gyazo.com/7dc9992ebee506c34c361911a033e870.jpg)](https://gyazo.com/7dc9992ebee506c34c361911a033e870)
+
+## ログインページ
+[![Image from Gyazo](https://i.gyazo.com/2e75f711e088520be1e0e7def0e32c0b.jpg)](https://gyazo.com/2e75f711e088520be1e0e7def0e32c0b)
+
+## スポット投稿一覧ページ
+[![Image from Gyazo](https://i.gyazo.com/62c451a31ed129684a52543ecc8f7f0a.jpg)](https://gyazo.com/62c451a31ed129684a52543ecc8f7f0a)
+スポット投稿一覧ページから、新規スポット投稿ページとスポット詳細ページへ遷移することができます。  
+現在、投稿されたスポットの画像をAmazon S3へ保存していないため、非表示となっております。
 
 # 実装予定の機能
 
