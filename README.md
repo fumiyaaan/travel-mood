@@ -34,8 +34,10 @@ InstagramやTwitterなどの横綱級SNSと差別化させるために、Unknown
 # DEMO
 ## トップページ
 [![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
-トップページ上で、新規登録ページ、ログインページ、このアプリに関する説明ページに遷移することができます。
+トップページ上で、新規登録ページ、ログインページ、このアプリに関する説明ページに遷移することができます。  
 
+## アプリ説明ページ  
+[![Image from Gyazo](https://i.gyazo.com/4f7196a5b2a6ff7a321125c2900f7a2b.jpg)](https://gyazo.com/4f7196a5b2a6ff7a321125c2900f7a2b)
 
 
 # 実装予定の機能
