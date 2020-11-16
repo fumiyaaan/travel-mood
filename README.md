@@ -73,7 +73,7 @@ https://travel-mood.herokuapp.com/
 | profile            | text   |                           |
 
 ### Association
--has_many :spots
+-has_many :spots  
 -has_many :comments
 
 
@@ -86,7 +86,7 @@ https://travel-mood.herokuapp.com/
 | user        | references | null: false, foreign_key: true |
 
 ### Association
--belongs_to :user
+-belongs_to :user  
 -has_many :comments
 
 
@@ -100,7 +100,7 @@ https://travel-mood.herokuapp.com/
 | spot    | references | null: false, foreign_key: true |
 
 ### Association
--belongs_to :user
+-belongs_to :user  
 -belongs_to :spot
 
 ## ER図
