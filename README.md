@@ -9,12 +9,13 @@ Travel Moodは、スポット投稿型SNSです。
 https://travel-mood.herokuapp.com/
 
 # テスト用アカウント
-▪️ 投稿者用  
- ●メールアドレス：poster@com  
- ●パスワード：poster_user1  
-▪️ コメント・Unknowns評価用  
- ●メールアドレス：comment_user@com  
- ●パスワード：comment_user1
+- 投稿者用  
+  - メールアドレス：poster@com  
+  - パスワード：poster_user1  
+
+- コメント・Unknowns評価用  
+  - メールアドレス：comment_user@com  
+  - パスワード：comment_user1
 
 # 制作背景（意図）  
 ・行き当たりばったりの旅を楽しみたい  
