@@ -9,4 +9,5 @@ class User < ApplicationRecord
   validates_format_of :password, with: PASSWORD_REGEX, message: 'Include both letters and numbers'
 
   has_many :spots
+  has_many :comments
 end

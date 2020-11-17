@@ -21,6 +21,9 @@ class SpotsController < ApplicationController
   end
 
   def show
+    @comment = Comment.new
+    @comments = @spot.comments.includes(:user)
+    @unknown = @spot.comments.average(:unknown)
   end
 
   def edit
@@ -58,4 +61,5 @@ class SpotsController < ApplicationController
       redirect_to action: :index
     end
   end
+
 end

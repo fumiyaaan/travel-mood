@@ -50,7 +50,11 @@
 
     <%# Unknowns %>
       <div class="spot-show-unknowns">
-        <%= "Unknowns" %> <%= "4.5" %>
+        <% if @unknown %>
+          <%= "Unknowns" %> <%= @unknown.round(1) %>
+        <% else %>
+          <%= "Unknowns" %> <%= "未評価" %>
+        <% end %>
       </div>
     <%# Unknowns/ %>
 
@@ -59,10 +63,52 @@
 
   <%# コメント投稿欄 %>
     <div class="comment-post-wrap">
-      <div class="comment-form">
 
-      </div>
+      <%# 他のユーザーの投稿の場合 %>
+      <% if user_signed_in? && @spot.user_id != current_user.id %>
+        <%= form_with(model: [@spot, @comment], local: true, class: "post-comment-main") do |f| %>
+
+        <%= render 'devise/shared/error_messages', model: f.object %>
+
+          <div class="text-form-group">
+            <%= f.text_area :text, placeholder: "コメントする", class: "text-input-default" %>
+          </div>
+
+          <div class="unknowns-form-group">
+            <%= f.text_field :unknown, class: "unknowns-input-default" %>
+            <div class="unknowns-description-text">
+              Unknowns = 穴場度を1~5点で評価してみましょう
+            </div>
+          </div>
+
+          <div class="comment-btn-group">
+            <%= f.submit "コメント投稿", class: "comment-lightblue-btn" %>
+          </div>
+
+        <% end %>
+
+      <% end %>
+      <%# 他のユーザーの投稿の場合/ %>
+
     </div>
   <%# コメント投稿欄/ %>
+
+  <%# コメント一覧 %>
+    <div class="comments-wrap">
+      <h3 class="comments-title">＜コメント一覧＞</h3>
+      <% if @comments %>
+        <% @comments.each do |comment| %>
+          <div class="comment-main-info">
+            <%= comment.text %>
+              By. <%= link_to comment.user.name, "#", class: "comment-user" %>
+          </div>
+
+          <div class="comment-unknown">
+            Unknowns <%= comment.unknown %>
+          </div>
+        <% end %>
+      <% end %>
+    </div>
+  <%# コメント一覧/ %>
 
 </div>
