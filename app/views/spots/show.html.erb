@@ -50,7 +50,11 @@
 
     <%# Unknowns %>
       <div class="spot-show-unknowns">
-        <%= "Unknowns" %> <%= @unknown %>
+        <% if @unknown %>
+          <%= "Unknowns" %> <%= @unknown.round(1) %>
+        <% else %>
+          <%= "Unknowns" %> <%= "未評価" %>
+        <% end %>
       </div>
     <%# Unknowns/ %>
 
