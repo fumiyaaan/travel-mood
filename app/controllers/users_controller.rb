@@ -5,4 +5,10 @@ class UsersController < ApplicationController
     @profile = user.profile
     @spots = user.spots
   end
+
+  def edit
+  end
+
+  def update
+  end
 end
