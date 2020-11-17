@@ -4,7 +4,7 @@ class SpotsController < ApplicationController
   before_action :move_to_index, only: :edit
 
   def index
-    @spots = Spot.all
+    @spots = Spot.all.order('created_at DESC')
   end
 
   def new
