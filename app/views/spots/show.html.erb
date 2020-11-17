@@ -82,23 +82,9 @@
           </div>
 
         <% end %>
-      <%# 他のユーザーの投稿の場合/ %>
-
-      <%# 自分の投稿の場合 %>
-      <% elsif  user_signed_in? && @spot.user_id == current_user.id %>
-        <%= form_with(model: [@spot, @comment], class: "post-comment-main", local: true) do |f| %>
-          <div class="text-form-group">
-            <%= f.text_area :text, placeholder: "コメントする", class: "text-input-default" %>
-          </div>
-
-          <div class="comment-btn-group">
-            <%= f.submit "コメント投稿", class: "comment-lightblue-btn" %>
-          </div>
-
-        <% end %>
-      <%# 自分の投稿の場合/ %>
 
       <% end %>
+      <%# 他のユーザーの投稿の場合/ %>
 
     </div>
   <%# コメント投稿欄/ %>
