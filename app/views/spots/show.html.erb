@@ -36,7 +36,7 @@
 
     <%# 投稿者 %>
       <div class="spot-show-poster">
-        <%= link_to "#", class: "spot-show-poster-text" do %>
+        <%= link_to user_path(@spot.user.id), class: "spot-show-poster-text" do %>
           <span>By.</span><%= @spot.user.name %>
         <% end %>
       </div>
