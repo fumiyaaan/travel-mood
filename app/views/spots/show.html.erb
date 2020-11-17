@@ -100,7 +100,7 @@
         <% @comments.each do |comment| %>
           <div class="comment-main-info">
             <%= comment.text %>
-              By. <%= link_to comment.user.name, "#", class: "comment-user" %>
+              By. <%= link_to comment.user.name, user_path(comment.user.id), class: "comment-user" %>
           </div>
 
           <div class="comment-unknown">
