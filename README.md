@@ -40,7 +40,7 @@ https://travel-mood.herokuapp.com/
 
 # DEMO
 ## トップページ
-![demo](https://gyazo.com/263d9568798b5664b5858169e7762559/raw)  
+[![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
 
 背景を動画にしました。  
 トップページから、新規登録ページ、ログインページへ遷移することができます。また、START!をクリックすると、アプリ説明ページへ遷移します。
