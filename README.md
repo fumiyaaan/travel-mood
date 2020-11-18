@@ -32,7 +32,7 @@ https://travel-mood.herokuapp.com/
 そんな人たちの思いを汲み取って制作しました。  
 
 また、Unknownsをお互いに評価し合うことで、穴場スポットの発見・共有ができると考えました。  
-ここで言うUnknownsとは、「穴場度」を指し、1~5の5段階で評価されます。今まで評価されたUnknownの平均値は各スポットごとに算出されます。ここでいう「バズる」の基準は、Unknownsの高さになります。
+ここで言うUnknownsとは、「穴場度」を指し、1~5の5段階で評価されます。今まで評価されたUnknownsの平均値は各スポットごとに算出されます。ここでいう「バズる」の基準は、Unknownsの高さになります。
 
 # DEMO
 ## トップページ
@@ -55,7 +55,7 @@ https://travel-mood.herokuapp.com/
 
 今まで投稿された全てのスポットが表示されます。
 
-## 新規投稿ページ
+## 新規スポット投稿ページ
 [![Image from Gyazo](https://i.gyazo.com/8bd4fa5ebc3725706895a34b270bf40f.jpg)](https://gyazo.com/8bd4fa5ebc3725706895a34b270bf40f)
 
 ## スポット詳細ページ
@@ -88,7 +88,9 @@ Ruby / Ruby on Rails / MySQL / GitHub / Heroku / AWS / Visual Studio Code / Trel
 # 今後実装したい機能
 - スポット検索機能  
   - キーワード、Unknownsの高さなどの条件を指定して検索できる機能  
-- スポットの地図情報投稿機能（Google Maps APIの導入）
+- スポットの地図情報投稿機能（Google Maps APIの導入）  
+- ユーザー情報編集機能
+  - ニックネームとプロフィールを自由に変更できる機能
 
 # データベース設計
 ## usersテーブル
