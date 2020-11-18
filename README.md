@@ -8,6 +8,10 @@ Travel Moodは、スポット投稿型SNSです。
 # 本番環境
 https://travel-mood.herokuapp.com/
 
+## ID/Pass
+  - ID:satou
+  - Pass:90615
+
 ## テスト用アカウント
 - 投稿者用  
   - メールアドレス：poster@com  
