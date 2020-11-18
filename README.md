@@ -31,12 +31,13 @@ https://travel-mood.herokuapp.com/
 
 そんな人たちの思いを汲み取って制作しました。  
 
-Unknownsをお互いに評価し合うことで、穴場スポットの発見・共有ができると考えました。  
+また、Unknownsをお互いに評価し合うことで、穴場スポットの発見・共有ができると考えました。  
 ここで言うUnknownsとは、「穴場度」を指し、1~5の5段階で評価されます。今まで評価されたUnknownの平均値は各スポットごとに算出されます。ここでいう「バズる」の基準は、Unknownsの高さになります。
 
 # DEMO
 ## トップページ
 [![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
+
 背景を動画にしました。  
 トップページから、新規登録ページ、ログインページへ遷移することができます。また、START!をクリックすると、アプリ説明ページへ遷移します。
 
@@ -51,21 +52,27 @@ Unknownsをお互いに評価し合うことで、穴場スポットの発見・
 
 ## スポット投稿一覧ページ
 [![Image from Gyazo](https://i.gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3.jpg)](https://gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3)
+
 今まで投稿された全てのスポットが表示されます。
 
 ## 新規投稿ページ
 [![Image from Gyazo](https://i.gyazo.com/8bd4fa5ebc3725706895a34b270bf40f.jpg)](https://gyazo.com/8bd4fa5ebc3725706895a34b270bf40f)
 
 ## スポット詳細ページ
-[![Image from Gyazo](https://i.gyazo.com/f55ed854af6a6db30f1f8c1f12c6ee6a.gif)](https://gyazo.com/f55ed854af6a6db30f1f8c1f12c6ee6a)
+[![Image from Gyazo](https://i.gyazo.com/2884f9b478c9d81d39a341634afd708a.gif)](https://gyazo.com/2884f9b478c9d81d39a341634afd708a)  
+
+スポット詳細ページより、スポットの編集・削除ができます。
+
 
 ## コメント投稿・Unknowns評価
-[![Image from Gyazo](https://i.gyazo.com/a6d697d79228ae9536f6e7cbad783dc5.gif)](https://gyazo.com/a6d697d79228ae9536f6e7cbad783dc5)
+[![Image from Gyazo](https://i.gyazo.com/a6d697d79228ae9536f6e7cbad783dc5.gif)](https://gyazo.com/a6d697d79228ae9536f6e7cbad783dc5)  
+
 スポット詳細ページ上で、コメント投稿・Unknowns評価をすることができます。  
 今まで評価されたUnknownsの平均値が算出され、表示されます。
 
 ## ユーザー詳細ページ
 [![Image from Gyazo](https://i.gyazo.com/54a6555f3169ba8d6cc93c542e8fcbc7.jpg)](https://gyazo.com/54a6555f3169ba8d6cc93c542e8fcbc7)
+
 各ユーザーのプロフィールと今まで投稿したスポットを見ることができます。
 
 # 工夫したポイント
