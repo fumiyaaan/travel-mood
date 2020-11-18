@@ -35,7 +35,7 @@ https://travel-mood.herokuapp.com/
 
 # DEMO
 ## トップページ
-[![Image from Gyazo](https://i.gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3.jpg)](https://gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3) 
+[![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
 トップページは、背景を動画にしました。  
 トップページから、新規登録ページ、ログインページへ遷移することができます。また、START!をクリックすると、アプリ説明ページへ遷移します。  
 現時点では、背景の動画が再生されるまで数十秒かかるので、ファイル圧縮などの改善を予定しています。
@@ -50,9 +50,8 @@ https://travel-mood.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/2e75f711e088520be1e0e7def0e32c0b.jpg)](https://gyazo.com/2e75f711e088520be1e0e7def0e32c0b)
 
 ## スポット投稿一覧ページ
-[![Image from Gyazo](https://i.gyazo.com/62c451a31ed129684a52543ecc8f7f0a.jpg)](https://gyazo.com/62c451a31ed129684a52543ecc8f7f0a)
+[![Image from Gyazo](https://i.gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3.jpg)](https://gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3)
 スポット投稿一覧ページから、新規スポット投稿ページとスポット詳細ページへ遷移することができます。  
-現在、投稿されたスポットの画像をAmazon S3へ保存していないため、非表示となっております。
 
 ## 新規投稿ページ
 [![Image from Gyazo](https://i.gyazo.com/8bd4fa5ebc3725706895a34b270bf40f.jpg)](https://gyazo.com/8bd4fa5ebc3725706895a34b270bf40f)
