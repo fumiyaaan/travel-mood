@@ -1,0 +1,50 @@
+<div class="user-show-page">
+
+  <%= render 'shared/header' %>
+
+  <%# ユーザー情報 %>
+  <div class="user-show">
+
+    <div class="user-show-title">
+      <h1 class="user-show-title-text">
+        <%= @name %>さんのプロフィール
+      </h1>
+    </div>
+
+    <div class="user-profile">
+      <%= @profile %>
+    </div>
+
+    <%# 投稿したスポット一覧 %>
+    <div class="user-show-spots">
+      <h2 class="user-show-spots-title"><%= @name %>さんの投稿スポット</h2>
+        <ul class="user-show-spots-lists">
+          <% @spots.each do |spot| %>
+            <li class="user-show-spot-list">
+
+              <%# スポット画像 %>
+              <%= link_to spot_path(spot.id) do %>
+                <div class="user-show-spot-img">
+                  <%= image_tag spot.image, class: "show-spot-img" %>
+                </div>
+              <% end %>
+              <%# スポット画像 /%>
+
+              <%# スポットタイトル %>
+              <%= link_to spot_path(spot.id) do %>
+                <div class="user-show-spot-title">
+                  <%= spot.title %>
+                </div>
+              <% end %>
+              <%# スポットタイトル/ %>
+
+            </li>
+          <% end %>
+        </ul>
+    </div>
+    <%# 投稿したスポット一覧/ %>
+
+  </div>
+  <%# ユーザー情報 /%>
+
+</div>

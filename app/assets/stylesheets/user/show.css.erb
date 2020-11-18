@@ -1,0 +1,79 @@
+.user-show-page {
+  background-image: url("<%= asset_path('cesar-couto-pC2xOplxsVs-unsplash.jpg') %>");
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+.user-show-page::before {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: ' ';
+}
+
+.user-show {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.user-show-title-text {
+  color: white;
+  margin: 30px 0;
+}
+
+.user-profile {
+  color: white;
+  font-size: 20px;
+  width: 60vw;
+  word-wrap: normal;
+}
+
+.user-show-spots {
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.user-show-spots-title {
+  color: white;
+  width: 100%;
+  text-align: center;
+  margin: 60px 0 30px 0;
+}
+
+.user-show-spots-lists {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.user-show-spots-lists>.user-show-spot-list {
+  width: 35vh;
+  padding: 1vw;
+}
+
+.user-show-spot-img {
+  position: relative;
+}
+
+.show-spot-img {
+  width: 33vh;
+  height: 33vh;
+}
+
+.user-show-spot-title {
+  color: white;
+  text-align: center;
+}
