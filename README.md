@@ -18,7 +18,7 @@ https://travel-mood.herokuapp.com/
   - パスワード：poster_user1  
 
 - コメント投稿・Unknowns評価用  
-  - メールアドレス：comment_user@com  
+  - メールアドレス：comment@com  
   - パスワード：comment_user1
 
 # 制作背景（意図）  
@@ -87,7 +87,7 @@ https://travel-mood.herokuapp.com/
 Ruby / Ruby on Rails / MySQL / GitHub / Heroku / AWS / Visual Studio Code / Trello
 
 # 課題
-- 現状、トップページの動画が再生されるまで約30秒ほどかかってしまうため、ファイル圧縮などの改善を考えております。
+- 現状、トップページの動画が再生されるまで約20秒ほどかかってしまうため、ファイル圧縮などの改善を考えております。
 
 # 今後実装したい機能
 - スポット検索機能  
