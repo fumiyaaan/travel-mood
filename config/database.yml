@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: travel_mood_production
-  username: travel_mood
-  password: <%= ENV['TRAVEL_MOOD_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
