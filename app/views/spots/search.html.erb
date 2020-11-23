@@ -4,9 +4,8 @@
   
   <%# スポット検索フォーム %>
   <div class="search-wrap">
-    <h2 class="search-title">スポットを検索する</h2>
     <%= form_with(url: search_spots_path, local: true, method: :get, class: "search-form") do |f| %>
-      <%= f.text_field :keyword, placeholder: "キーワード（例）海", class: "search-input" %>
+      <%= f.text_field :keyword, placeholder: "スポットを検索する", class: "search-input" %>
       <%= f.submit "検索", class: "search-btn" %>
     <% end %>
   </div>
@@ -14,7 +13,16 @@
 
   <%# スポット一覧 %>
   <div class="all-spots">
-    <h2 class="spot-lists-title">投稿スポット一覧</h2>
+
+    <%# 検索結果の有無による条件分岐 %>
+    <% if @spots.length != 0 %>
+      <h2 class="spot-lists-title">検索結果</h2>
+    <% else %>
+      <h2 class="spot-lists-title">該当するスポットはありません</h2>
+      <%= link_to "スポット一覧ページへ戻る", spots_path, class: "back-spots-page" %>
+    <% end %>
+    <%# 検索結果の有無による条件分岐/ %>
+
       <ul class="spot-lists">
         <% @spots.each do |spot| %>
         <li class="spot-list">
@@ -63,4 +71,3 @@
   </div>
   <%# 投稿ボタン/ %>
 </div>
-
