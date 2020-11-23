@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :spots do
     resources :comments, only: :create
   end
+  get 'spots', to: 'spots#search'
   resources :users, only: :show
   get 'homes', to: 'homes#about'
 end
