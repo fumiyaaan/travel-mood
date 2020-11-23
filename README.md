@@ -25,7 +25,7 @@ https://travel-mood.herokuapp.com/
 [![Image from Gyazo](https://i.gyazo.com/f098995462122e9507ec832bfdb8827f.jpg)](https://gyazo.com/f098995462122e9507ec832bfdb8827f)  
 
 ２. ログイン後、「START!」をクリック  
-[![Image from Gyazo](https://i.gyazo.com/b1a678a2ca9decf6fb108fe0a73cc9dc.gif)](https://gyazo.com/b1a678a2ca9decf6fb108fe0a73cc9dc)
+[![Image from Gyazo](https://i.gyazo.com/912cc04501438983994d6d3012c323b4.jpg)](https://gyazo.com/912cc04501438983994d6d3012c323b4)
 
 ３. 右下の「投稿する」をクリック  
 [![Image from Gyazo](https://i.gyazo.com/be85a933fad2f87587d8e26c3c03da3c.jpg)](https://gyazo.com/be85a933fad2f87587d8e26c3c03da3c)  
