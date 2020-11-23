@@ -34,6 +34,10 @@ video {
   margin: 0 15px;
 }
 
+.top-travel-mood-logo:hover {
+  opacity: 0.8;
+}
+
 .top-right-header {
   z-index: 1;
   display: flex;
@@ -46,9 +50,17 @@ video {
   font-size: 20px;
 }
 
+.top-sign-up:hover {
+  opacity: 0.8;
+}
+
 .top-sign-in {
   color: white;
   font-size: 20px;
+}
+
+.top-sign-in:hover {
+  opacity: 0.8;
 }
 
 .top-user-name {
@@ -56,9 +68,17 @@ video {
   font-size: 20px;
 }
 
+.top-user-name:hover {
+  opacity: 0.8;
+}
+
 .top-sign-out {
   color: white;
   font-size: 20px;
+}
+
+.top-sign-out:hover {
+  opacity: 0.8;
 }
 
 .appear-message {
