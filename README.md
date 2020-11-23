@@ -13,8 +13,8 @@ http://54.238.38.60/
 https://travel-mood.herokuapp.com/
 
 ## ID/Pass
-- ID:satou
-- Pass:90615
+- ID：satou
+- Pass：90615
 
 ## テスト用アカウント 
   - メールアドレス：sample@com
