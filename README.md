@@ -65,6 +65,9 @@ https://travel-mood.herokuapp.com/
 
 # 工夫したポイント
 - 入り口となるトップページの背景を動画にすることで、ユーザーがワクワクするような見た目を意識しました。  
+下記URLよりトップページの動画をご覧ください。  
+[![Image from Gyazo](https://i.gyazo.com/c56f7e55e030bba1fcc9b32a6e6a9e94.gif)](https://gyazo.com/c56f7e55e030bba1fcc9b32a6e6a9e94) 
+
 - InstagramやTwitterなどの横綱級SNSと差別化させるために、Unknowns評価機能を実装しました。
 
 # 使用技術
