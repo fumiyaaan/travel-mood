@@ -46,6 +46,9 @@ class SpotsController < ApplicationController
     end
   end
 
+  def search
+  end
+
   private
 
   def spot_params
