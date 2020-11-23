@@ -2,6 +2,16 @@
 
   <%= render 'shared/header' %>
   
+  <%# スポット検索フォーム %>
+  <div class="search-wrap">
+    <h2>スポットを検索する</h2>
+    <%= form_with(url: search_spots_path, local: true, method: :get, class: "search-form") do |f| %>
+      <%= f.text_field :keyword, placeholder: "キーワード（例）海", class: "search-input" %>
+      <%= f.submit "検索", class: "search-btn" %>
+    <% end %>
+  </div>
+  <%# スポット検索フォーム/ %>
+
   <%# スポット一覧 %>
   <div class="all-spots">
     <h2 class="spot-lists-title">投稿スポット一覧</h2>
