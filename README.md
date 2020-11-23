@@ -1,5 +1,6 @@
 # アプリケーション名
-Travel Mood
+Travel Mood  
+[![Image from Gyazo](https://i.gyazo.com/76bba3ecce2af409dce3b8be27031f42.jpg)](https://gyazo.com/76bba3ecce2af409dce3b8be27031f42)
 
 # アプリケーション概要
 Travel Moodは、スポット投稿型SNSです。  
@@ -11,8 +12,37 @@ http://54.238.38.60/
 https://travel-mood.herokuapp.com/
 
 ## ID/Pass
-  - ID:satou
-  - Pass:90615
+- ID:satou
+- Pass:90615
+
+## テスト用アカウント 
+  - メールアドレス：sample@com
+  - パスワード：sample10
+
+# DEMO
+１.テスト用アカウントでログイン  
+[![Image from Gyazo](https://i.gyazo.com/f098995462122e9507ec832bfdb8827f.jpg)](https://gyazo.com/f098995462122e9507ec832bfdb8827f)  
+
+２.ログイン後、「START!」をクリック  
+
+３.右下の「投稿する」をクリック  
+[![Image from Gyazo](https://i.gyazo.com/be85a933fad2f87587d8e26c3c03da3c.jpg)](https://gyazo.com/be85a933fad2f87587d8e26c3c03da3c)  
+
+４.画像・タイトル・スポット説明を入力して、「投稿」ボタンをクリック  
+[![Image from Gyazo](https://i.gyazo.com/bab3884d5c587bf31524b16e08188695.jpg)](https://gyazo.com/bab3884d5c587bf31524b16e08188695)  
+
+５.投稿したスポットは一覧ページに表示される  
+[![Image from Gyazo](https://i.gyazo.com/7234d010afedae042d8c20c5f424ce0b.jpg)](https://gyazo.com/7234d010afedae042d8c20c5f424ce0b)  
+
+６.一覧ページ上で投稿したスポット画像をクリックすると、以下のスポット詳細ページに遷移します  
+[![Image from Gyazo](https://i.gyazo.com/bfac5c878bdf6ad449f699aebb96df5c.jpg)](https://gyazo.com/bfac5c878bdf6ad449f699aebb96df5c)  
+
+７.他のユーザーが投稿したスポットにコメント・Unknowns評価  
+[![Image from Gyazo](https://i.gyazo.com/72ce66a3af6d0310da849a4543457eeb.jpg)](https://gyazo.com/72ce66a3af6d0310da849a4543457eeb)  
+
+８.投稿したコメントが表示され、平均Unknownsが算出される  
+[![Image from Gyazo](https://i.gyazo.com/d374e69b726964f5be84b6eec62bdca7.jpg)](https://gyazo.com/d374e69b726964f5be84b6eec62bdca7)
+
 
 # 制作背景（意図）  
 - 行き当たりばったりの旅を楽しみたい  
@@ -31,47 +61,6 @@ https://travel-mood.herokuapp.com/
 また、Unknownsをお互いに評価し合うことで、穴場スポットの発見・共有ができると考えました。  
 ここで言うUnknownsとは、「穴場度」を指し、1~5の5段階で評価されます。今まで評価されたUnknownsの平均値は各スポットごとに算出されます。ここでいう「バズる」の基準は、Unknownsの高さになります。
 
-# DEMO
-## トップページ
-[![Image from Gyazo](https://i.gyazo.com/263d9568798b5664b5858169e7762559.gif)](https://gyazo.com/263d9568798b5664b5858169e7762559)  
-
-背景を動画にしました。  
-トップページから、新規登録ページ、ログインページへ遷移することができます。また、START!をクリックすると、アプリ説明ページへ遷移します。
-
-## アプリ説明ページ
-[![Image from Gyazo](https://i.gyazo.com/4f7196a5b2a6ff7a321125c2900f7a2b.jpg)](https://gyazo.com/4f7196a5b2a6ff7a321125c2900f7a2b)
-
-## 新規登録ページ
-[![Image from Gyazo](https://i.gyazo.com/7dc9992ebee506c34c361911a033e870.jpg)](https://gyazo.com/7dc9992ebee506c34c361911a033e870)
-
-## ログインページ
-[![Image from Gyazo](https://i.gyazo.com/2e75f711e088520be1e0e7def0e32c0b.jpg)](https://gyazo.com/2e75f711e088520be1e0e7def0e32c0b)
-
-## スポット投稿一覧ページ
-[![Image from Gyazo](https://i.gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3.jpg)](https://gyazo.com/c6ada2ac8092b33dab1a4fefdbbc89a3)
-
-今まで投稿された全てのスポットが表示されます。
-
-## 新規スポット投稿ページ
-[![Image from Gyazo](https://i.gyazo.com/8bd4fa5ebc3725706895a34b270bf40f.jpg)](https://gyazo.com/8bd4fa5ebc3725706895a34b270bf40f)
-
-## スポット詳細ページ
-[![Image from Gyazo](https://i.gyazo.com/2884f9b478c9d81d39a341634afd708a.gif)](https://gyazo.com/2884f9b478c9d81d39a341634afd708a)  
-
-スポット詳細ページより、スポットの編集・削除ができます。
-
-
-## コメント投稿・Unknowns評価
-[![Image from Gyazo](https://i.gyazo.com/a6d697d79228ae9536f6e7cbad783dc5.gif)](https://gyazo.com/a6d697d79228ae9536f6e7cbad783dc5)  
-
-スポット詳細ページ上で、コメント投稿・Unknowns評価をすることができます。  
-今まで評価されたUnknownsの平均値が算出され、表示されます。
-
-## ユーザー詳細ページ
-[![Image from Gyazo](https://i.gyazo.com/54a6555f3169ba8d6cc93c542e8fcbc7.jpg)](https://gyazo.com/54a6555f3169ba8d6cc93c542e8fcbc7)
-
-各ユーザーのプロフィールと今まで投稿したスポットを見ることができます。
-
 # 工夫したポイント
 - 入り口となるトップページの背景を動画にすることで、ユーザーがワクワクするような見た目を意識しました。  
 - InstagramやTwitterなどの横綱級SNSと差別化させるために、Unknowns評価機能を実装しました。
@@ -80,7 +69,7 @@ https://travel-mood.herokuapp.com/
 Ruby / Ruby on Rails / MySQL / GitHub / Heroku / AWS / Visual Studio Code / Trello
 
 # 課題
-- 現状、トップページの動画が再生されるまで約20秒ほどかかってしまうため、ファイル圧縮などの改善を考えております。
+- 現状、トップページの動画が再生されるまで約10秒ほどかかってしまうため、ファイル圧縮などの改善を考えております。
 
 # 今後実装したい機能
 - スポットの地図情報投稿機能（Google Maps APIの導入）  
