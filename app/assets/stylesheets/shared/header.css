@@ -19,6 +19,10 @@
   margin: 0 15px;
 }
 
+.travel-mood-logo:hover {
+  opacity: 0.8;
+}
+
 .right-header {
   z-index: 1;
   display: flex;
@@ -31,9 +35,17 @@
   font-size: 20px;
 }
 
+.sign-up:hover {
+  opacity: 0.8;
+}
+
 .sign-in {
   color: white;
   font-size: 20px;
+}
+
+.sign-in:hover {
+  opacity: 0.8;
 }
 
 .user-name {
@@ -41,7 +53,15 @@
   font-size: 20px;
 }
 
+.user-name:hover {
+  opacity: 0.8;
+}
+
 .sign-out {
   color: white;
   font-size: 20px;
+}
+
+.sign-out:hover {
+  opacity: 0.8;
 }

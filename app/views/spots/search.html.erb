@@ -13,7 +13,16 @@
 
   <%# スポット一覧 %>
   <div class="all-spots">
-    <h2 class="spot-lists-title">投稿スポット一覧</h2>
+
+    <%# 検索結果の有無による条件分岐 %>
+    <% if @spots.length != 0 %>
+      <h2 class="spot-lists-title">検索結果</h2>
+    <% else %>
+      <h2 class="spot-lists-title">該当するスポットはありません</h2>
+      <%= link_to "スポット一覧ページへ戻る", spots_path, class: "back-spots-page" %>
+    <% end %>
+    <%# 検索結果の有無による条件分岐/ %>
+
       <ul class="spot-lists">
         <% @spots.each do |spot| %>
         <li class="spot-list">
