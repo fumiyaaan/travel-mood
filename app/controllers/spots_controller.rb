@@ -47,7 +47,7 @@ class SpotsController < ApplicationController
   end
 
   def search
-
+    @spots = Spot.search(params[:keyword])
   end
 
   private
