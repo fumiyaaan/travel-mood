@@ -14,15 +14,6 @@ https://travel-mood.herokuapp.com/
   - ID:satou
   - Pass:90615
 
-## テスト用アカウント
-- 投稿者用  
-  - メールアドレス：poster@com  
-  - パスワード：poster_user1  
-
-- コメント投稿・Unknowns評価用  
-  - メールアドレス：comment@com  
-  - パスワード：comment_user1
-
 # 制作背景（意図）  
 - 行き当たりばったりの旅を楽しみたい  
 - 王道スポットより穴場スポットが好き  
