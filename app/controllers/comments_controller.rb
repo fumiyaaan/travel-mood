@@ -16,4 +16,5 @@ class CommentsController < ApplicationController
   def comment_params
     params.require(:comment).permit(:text, :unknown).merge(user_id: current_user.id, spot_id: params[:spot_id])
   end
+  
 end
