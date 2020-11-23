@@ -6,9 +6,9 @@ Travel Moodは、スポット投稿型SNSです。
 ユーザーを登録するとスポットを投稿できるようになります。自身が投稿したスポットは、編集と削除をすることができます。他のユーザーが投稿したスポットにコメントすることができます。また、投稿されたスポットは、コメントと同時にUnknowns（穴場度）を５段階で評価され、各スポットごとにUnknownsの平均値が自動的に算出されます。
 
 # 本番環境
-https://travel-mood.herokuapp.com/
-
 http://54.238.38.60/
+
+https://travel-mood.herokuapp.com/
 
 ## ID/Pass
   - ID:satou
