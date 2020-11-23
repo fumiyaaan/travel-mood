@@ -1,5 +1,6 @@
 # アプリケーション名
 Travel Mood  
+
 [![Image from Gyazo](https://i.gyazo.com/76bba3ecce2af409dce3b8be27031f42.jpg)](https://gyazo.com/76bba3ecce2af409dce3b8be27031f42)
 
 # アプリケーション概要
@@ -20,28 +21,29 @@ https://travel-mood.herokuapp.com/
   - パスワード：sample10
 
 # DEMO
-１.テスト用アカウントでログイン  
+１. テスト用アカウントでログイン  
 [![Image from Gyazo](https://i.gyazo.com/f098995462122e9507ec832bfdb8827f.jpg)](https://gyazo.com/f098995462122e9507ec832bfdb8827f)  
 
-２.ログイン後、「START!」をクリック  
+２. ログイン後、「START!」をクリック  
+[![Image from Gyazo](https://i.gyazo.com/b1a678a2ca9decf6fb108fe0a73cc9dc.gif)](https://gyazo.com/b1a678a2ca9decf6fb108fe0a73cc9dc)
 
-３.右下の「投稿する」をクリック  
+３. 右下の「投稿する」をクリック  
 [![Image from Gyazo](https://i.gyazo.com/be85a933fad2f87587d8e26c3c03da3c.jpg)](https://gyazo.com/be85a933fad2f87587d8e26c3c03da3c)  
 
-４.画像・タイトル・スポット説明を入力して、「投稿」ボタンをクリック  
+４. 画像・タイトル・スポット説明を入力して、「投稿」ボタンをクリック  
 [![Image from Gyazo](https://i.gyazo.com/bab3884d5c587bf31524b16e08188695.jpg)](https://gyazo.com/bab3884d5c587bf31524b16e08188695)  
 
-５.投稿したスポットは一覧ページに表示される  
+５. 投稿したスポットは一覧ページに表示されます   
 [![Image from Gyazo](https://i.gyazo.com/7234d010afedae042d8c20c5f424ce0b.jpg)](https://gyazo.com/7234d010afedae042d8c20c5f424ce0b)  
 
-６.一覧ページ上で投稿したスポット画像をクリックすると、以下のスポット詳細ページに遷移します  
+６. 一覧ページ上で投稿したスポット画像をクリックすると、以下のスポット詳細ページに遷移します  
 [![Image from Gyazo](https://i.gyazo.com/bfac5c878bdf6ad449f699aebb96df5c.jpg)](https://gyazo.com/bfac5c878bdf6ad449f699aebb96df5c)  
 
-７.他のユーザーが投稿したスポットにコメント・Unknowns評価  
-[![Image from Gyazo](https://i.gyazo.com/72ce66a3af6d0310da849a4543457eeb.jpg)](https://gyazo.com/72ce66a3af6d0310da849a4543457eeb)  
+７. 他のユーザーが投稿したスポットにコメント・Unknowns評価  
+[![Image from Gyazo](https://i.gyazo.com/be17ad211cb4531cddfe85bbeb6c66fc.jpg)](https://gyazo.com/be17ad211cb4531cddfe85bbeb6c66fc)  
 
-８.投稿したコメントが表示され、平均Unknownsが算出される  
-[![Image from Gyazo](https://i.gyazo.com/d374e69b726964f5be84b6eec62bdca7.jpg)](https://gyazo.com/d374e69b726964f5be84b6eec62bdca7)
+８. 投稿したコメントが表示され、平均Unknownsが算出されます  
+[![Image from Gyazo](https://i.gyazo.com/670f5938441ed226cea5fa12441fb357.jpg)](https://gyazo.com/670f5938441ed226cea5fa12441fb357)
 
 
 # 制作背景（意図）  
