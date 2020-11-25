@@ -77,7 +77,7 @@ Ruby / Ruby on Rails / MySQL / GitHub / Heroku / AWS / Visual Studio Code / Trel
 - 現状、トップページの動画が再生されるまで約10秒ほどかかってしまうため、ファイル圧縮などの改善を考えております。
 
 # 今後実装したい機能
-- スポットの地図情報投稿機能（Google Maps APIの導入）  
+- スポットの地図情報投稿機能（Maps static APIの導入）  
 - ユーザー情報編集機能
   - ニックネームとプロフィールを自由に変更できる機能
 
