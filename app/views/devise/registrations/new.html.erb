@@ -5,7 +5,7 @@
   
   <div class="form-wrap">
     <div class="form-group">
-      <h1 class="form-header">Sign up</h1>
+      <h1 class="form-header">ユーザー新規登録</h1>
     </div>
 
     <%= render 'devise/shared/error_messages', model: f.object %>
@@ -27,9 +27,7 @@
     <div class="form-group">
       <div class="form-text">
         <%= f.label :"パスワード" %>
-        <% if @minimum_password_length %>
-          <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
+
       </div>
       <%= f.password_field :password, placeholder: "6文字以上の半角英数字", class: 'input-default', autocomplete: "new-password" %>
     </div>
@@ -49,11 +47,11 @@
     </div>
 
     <div class="registration-btn">
-      <%= f.submit "Sign up", class: "registration-lightblue-btn" %>
+      <%= f.submit "新規登録", class: "registration-lightblue-btn" %>
     </div>
 
     <div class="login-btn">
-      <%= link_to "Log in", new_user_session_path, class: "login-transparence-btn" %>
+      <%= link_to "ログイン", new_user_session_path, class: "login-transparence-btn" %>
     </div>
 
   </div>
