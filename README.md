@@ -22,7 +22,7 @@ https://travel-mood.herokuapp.com/
 
 # DEMO
 １. テスト用アカウントでログイン  
-[![Image from Gyazo](https://i.gyazo.com/f098995462122e9507ec832bfdb8827f.jpg)](https://gyazo.com/f098995462122e9507ec832bfdb8827f)  
+[![Image from Gyazo](https://i.gyazo.com/219b2fb0d3382f52fe4db9e7160384db.jpg)](https://gyazo.com/219b2fb0d3382f52fe4db9e7160384db)
 
 ２. ログイン後、「START!」をクリック  
 [![Image from Gyazo](https://i.gyazo.com/912cc04501438983994d6d3012c323b4.jpg)](https://gyazo.com/912cc04501438983994d6d3012c323b4)
