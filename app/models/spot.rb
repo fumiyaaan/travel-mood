@@ -11,11 +11,10 @@ class Spot < ApplicationRecord
 
   # スポット検索に関するメソッド
   def self.search(search)
-    if search != ""
+    if search != ''
       Spot.where('title LIKE(?)', "%#{search}%")
     else
       Spot.all
     end
   end
-  
 end
