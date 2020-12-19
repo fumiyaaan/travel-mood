@@ -17,14 +17,14 @@
       <div class="session-form-text">
         <%= f.label :"メールアドレス" %><br />
       </div>
-    <%= f.email_field :email, class: "input-default", autofocus: true, autocomplete: "email" %>
+    <%= f.email_field :email, class: "input-default", id: 'user_メールアドレス', autofocus: true, autocomplete: "email" %>
     </div>
 
   <div class="session-form-group">
     <div class="session-form-text">
       <%= f.label :"パスワード" %><br />
     </div>
-    <%= f.password_field :password, class: "input-default", autocomplete: "current-password" %>
+    <%= f.password_field :password, class: "input-default", id: 'user_パスワード', autocomplete: "current-password" %>
   </div>
 
   <div class="session-btn">
