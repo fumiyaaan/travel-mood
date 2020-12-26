@@ -27,7 +27,7 @@
       <div class="post-form-text">
         <%= f.label :"タイトル", class: "post-text" %>
       </div>
-      <%= f.text_field :title, class: "post-input-default" %>
+      <%= f.text_field :title, class: "post-input-default", id: "spot_タイトル" %>
     </div>
     <%# タイトル/ %>
 
@@ -36,7 +36,7 @@
       <div class="post-form-text">
         <%= f.label :"スポット説明", class: "post-text" %>
       </div>
-      <%= f.text_area :description, class: "post-description-default", placeholder: "スポットの説明（必須 1000文字まで）", rows:"7" ,maxlength:"1000" %>
+      <%= f.text_area :description, class: "post-description-default", id: "spot_スポット説明", placeholder: "スポットの説明（必須 1000文字まで）", rows:"7" ,maxlength:"1000" %>
     </div>
     <%# スポットの説明/ %>
 
