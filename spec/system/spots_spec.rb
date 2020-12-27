@@ -209,7 +209,6 @@ RSpec.describe 'スポット詳細', type: :system do
 
   it 'ログインしたユーザーは自分が投稿したスポットの詳細ページでコメント投稿欄を見ることができない' do
     # @spotを投稿したユーザーでログインする
-    binding.pry
     visit new_user_session_path
     fill_in 'メールアドレス', with: @spot.user.email
     fill_in 'パスワード', with: @spot.user.password
