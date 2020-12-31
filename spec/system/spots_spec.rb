@@ -104,7 +104,7 @@ RSpec.describe 'スポット編集', type: :system do
     end
   end
 
-  context 'スポット編集ができるとき' do
+  context 'スポット編集ができないとき' do
     it 'ログインしたユーザーは自分以外が投稿したスポットの編集画面には移動できない' do
       # 一旦、ユーザー登録をする
       visit new_user_registration_path
