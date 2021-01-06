@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "スポット投稿", type: :system do
+RSpec.describe 'スポット投稿', type: :system do
   before do
     @user = FactoryBot.create(:user)
     @spot = FactoryBot.build(:spot)
@@ -27,7 +27,7 @@ RSpec.describe "スポット投稿", type: :system do
       fill_in 'スポット説明', with: @spot.description
 
       # 投稿ボタンを押すとSpotモデルのカウントが1上がることを確認する
-      expect{find('input[name="commit"]').click}.to change { Spot.count }.by(1)
+      expect { find('input[name="commit"]').click }.to change { Spot.count }.by(1)
 
       # スポット一覧ページへ遷移する
       expect(current_path).to eq spots_path
@@ -50,9 +50,9 @@ end
 
 RSpec.describe 'スポット編集', type: :system do
   before do
-    @spot = FactoryBot.create(:spot) 
+    @spot = FactoryBot.create(:spot)
   end
-  
+
   context 'スポット編集ができるとき' do
     it 'ログインしたユーザーは自分が投稿したスポットのみ編集できる' do
       # @spotを投稿したユーザーでログインする
@@ -70,7 +70,7 @@ RSpec.describe 'スポット編集', type: :system do
 
       # @spotに編集ボタンがあることを確認する
       expect(
-        find(".more").hover
+        find('.more').hover
       ).to have_link '編集', href: edit_spot_path(@spot)
 
       # 編集ページへ移動する
@@ -89,9 +89,9 @@ RSpec.describe 'スポット編集', type: :system do
       fill_in 'スポット説明', with: "#{@spot.description}+（編集しました）"
 
       # 編集してもSpotモデルのカウントは変わらないことを確認する
-      expect{
+      expect  do
         find('input[name="commit"]').click
-      }.to change { Spot.count }.by(0)
+      end.to change { Spot.count }.by(0)
 
       # @spotの詳細ページに遷移することを確認する
       expect(current_path).to eq spot_path(@spot)
@@ -108,10 +108,10 @@ RSpec.describe 'スポット編集', type: :system do
     it 'ログインしたユーザーは自分以外が投稿したスポットの編集画面には移動できない' do
       # 一旦、ユーザー登録をする
       visit new_user_registration_path
-      fill_in 'ニックネーム', with: "次郎"
-      fill_in 'メールアドレス', with: "jiro@com"
-      fill_in 'パスワード', with: "jiro1022"
-      fill_in 'パスワード再確認', with: "jiro1022"
+      fill_in 'ニックネーム', with: '次郎'
+      fill_in 'メールアドレス', with: 'jiro@com'
+      fill_in 'パスワード', with: 'jiro1022'
+      fill_in 'パスワード再確認', with: 'jiro1022'
       find('input[name="commit"]').click
 
       # スポット一覧ページへ移動する
@@ -128,7 +128,7 @@ end
 
 RSpec.describe 'スポット削除', type: :system do
   before do
-    @spot = FactoryBot.create(:spot) 
+    @spot = FactoryBot.create(:spot)
   end
 
   context 'スポット削除ができるとき' do
@@ -148,16 +148,16 @@ RSpec.describe 'スポット削除', type: :system do
 
       # @spotに削除ボタンがあることを確認する
       expect(
-        find(".more").hover
+        find('.more').hover
       ).to have_link '削除', href: spot_path(@spot)
 
       # 投稿ボタンを押すとSpotモデルのカウントが1下がることを確認する
-      expect{
-        find(".more").hover.find_link('削除', href: spot_path(@spot)).click
-      }.to change { Spot.count }.by(-1)
+      expect do
+        find('.more').hover.find_link('削除', href: spot_path(@spot)).click
+      end.to change { Spot.count }.by(-1)
 
       # スポット一覧ページに@spotが存在しないことを確認する（タイトル）
-      expect(page).to have_no_content("#{@spot.title}")
+      expect(page).to have_no_content(@spot.title.to_s)
     end
   end
 
@@ -165,10 +165,10 @@ RSpec.describe 'スポット削除', type: :system do
     it 'ログインしたユーザーは自分以外が投稿したスポットの削除ができない' do
       # 一旦、ユーザー登録をする
       visit new_user_registration_path
-      fill_in 'ニックネーム', with: "次郎"
-      fill_in 'メールアドレス', with: "jiro@com"
-      fill_in 'パスワード', with: "jiro1022"
-      fill_in 'パスワード再確認', with: "jiro1022"
+      fill_in 'ニックネーム', with: '次郎'
+      fill_in 'メールアドレス', with: 'jiro@com'
+      fill_in 'パスワード', with: 'jiro1022'
+      fill_in 'パスワード再確認', with: 'jiro1022'
       find('input[name="commit"]').click
 
       # スポット一覧ページへ移動する
@@ -191,20 +191,20 @@ RSpec.describe 'スポット詳細', type: :system do
   it 'ログインしたユーザーは自分以外のユーザーが投稿したスポットの詳細ページでコメント投稿欄を見ることができる' do
     # 一旦、ユーザー登録をする
     visit new_user_registration_path
-    fill_in 'ニックネーム', with: "次郎"
-    fill_in 'メールアドレス', with: "jiro@com"
-    fill_in 'パスワード', with: "jiro1022"
-    fill_in 'パスワード再確認', with: "jiro1022"
+    fill_in 'ニックネーム', with: '次郎'
+    fill_in 'メールアドレス', with: 'jiro@com'
+    fill_in 'パスワード', with: 'jiro1022'
+    fill_in 'パスワード再確認', with: 'jiro1022'
     find('input[name="commit"]').click
 
-     # スポット一覧ページへ移動する
-     visit spots_path
+    # スポット一覧ページへ移動する
+    visit spots_path
 
-     # @spotの詳細ページへ移動する
-     visit spot_path(@spot)
+    # @spotの詳細ページへ移動する
+    visit spot_path(@spot)
 
-     # コメント投稿用のフォームが存在することを確認する
-     expect(page).to have_selector 'form'
+    # コメント投稿用のフォームが存在することを確認する
+    expect(page).to have_selector 'form'
   end
 
   it 'ログインしたユーザーは自分が投稿したスポットの詳細ページでコメント投稿欄を見ることができない' do
@@ -216,7 +216,7 @@ RSpec.describe 'スポット詳細', type: :system do
 
     # スポット一覧ページへ移動する
     visit spots_path
-    
+
     # @spotの詳細ページへ移動する
     visit spot_path(@spot)
 
